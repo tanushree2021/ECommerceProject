@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Essence - Fashion Ecommerce Template</title>
+    <title>Trending Twig</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="${pageContext.request.contextPath}/resources/img/core-img/favicon.ico">
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/core-style.css">
@@ -26,8 +26,8 @@
         <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
             <!-- Classy Menu -->
             <nav class="classy-navbar" id="essenceNav">
-                <!-- Logo -->
-                <a class="nav-brand" href="index.html"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo.png" alt=""></a>
+                <!--  -->
+                <a class="nav-brand" href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/core-img/tlogo.png" alt=""></a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -45,27 +45,27 @@
                                 <div class="megamenu">
                                     <ul class="single-mega cn-col-4">
                                         <li class="title">Women's Collection</li>
-                                        <li><a href="shop.html">Dresses</a></li>
-                                        <li><a href="shop.html">Blouses &amp; Shirts</a></li>
-                                        <li><a href="shop.html">T-shirts</a></li>
-                                        <li><a href="shop.html">Rompers</a></li>
-                                        <li><a href="shop.html">Bras &amp; Panties</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Dresses</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Blouses &amp; Shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">T-shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Rompers</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Bras &amp; Panties</a></li>
                                     </ul>
                                     <ul class="single-mega cn-col-4">
                                         <li class="title">Men's Collection</li>
-                                        <li><a href="shop.html">T-Shirts</a></li>
-                                        <li><a href="shop.html">Polo</a></li>
-                                        <li><a href="shop.html">Shirts</a></li>
-                                        <li><a href="shop.html">Jackets</a></li>
-                                        <li><a href="shop.html">Trench</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">T-Shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Polo</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Jackets</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Trench</a></li>
                                     </ul>
                                     <ul class="single-mega cn-col-4">
                                         <li class="title">Kid's Collection</li>
-                                        <li><a href="shop.html">Dresses</a></li>
-                                        <li><a href="shop.html">Shirts</a></li>
-                                        <li><a href="shop.html">T-shirts</a></li>
-                                        <li><a href="shop.html">Jackets</a></li>
-                                        <li><a href="shop.html">Trench</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Dresses</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">T-shirts</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Jackets</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/shop.html">Trench</a></li>
                                     </ul>
                                     <div class="single-mega cn-col-4">
                                         <img src="${pageContext.request.contextPath}/resources/img/bg-img/bg-6.jpg" alt="">
@@ -74,18 +74,18 @@
                             </li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="single-product-details.html">Product Details</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="single-blog.html">Single Blog</a></li>
-                                    <li><a href="regular-page.html">Regular Page</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/index.html">Home</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/shop.html">Shop</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/single-product-details.html">Product Details</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/checkout.html">Checkout</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/blog.html">Blog</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/single-blog.html">Single Blog</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/regular-page.html">Regular Page</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/contact.html">Contact</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="${pageContext.request.contextPath}/blog.html">Blog</a></li>
+                            <li><a href="${pageContext.request.contextPath}/contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <!-- Nav End -->
@@ -193,7 +193,7 @@
                     <li><span>total:</span> <span>$232.00</span></li>
                 </ul>
                 <div class="checkout-btn mt-100">
-                    <a href="checkout.html" class="btn essence-btn">check out</a>
+                    <a href="${pageContext.request.contextPath}/checkout.html" class="btn essence-btn">check out</a>
                 </div>
             </div>
         </div>
@@ -201,7 +201,7 @@
     <!-- ##### Right Side Cart End ##### -->
 
     <!-- ##### Welcome Area Start ##### -->
-    <section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
+    <section class="welcome_area bg-img background-overlay" style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/bg-1.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -222,7 +222,7 @@
             <div class="row justify-content-center">
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/bg-2.jpg);">
                         <div class="catagory-content">
                             <a href="#">Clothing</a>
                         </div>
@@ -230,7 +230,7 @@
                 </div>
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-3.jpg);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/bg-3.jpg);">
                         <div class="catagory-content">
                             <a href="#">Shoes</a>
                         </div>
@@ -238,7 +238,7 @@
                 </div>
                 <!-- Single Catagory -->
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
+                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/bg-4.jpg);">
                         <div class="catagory-content">
                             <a href="#">Accessories</a>
                         </div>
@@ -254,7 +254,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="cta-content bg-img background-overlay" style="background-image: url(img/bg-img/bg-5.jpg);">
+                    <div class="cta-content bg-img background-overlay" style="background-image: url(${pageContext.request.contextPath}/resources/img/bg-img/bg-5.jpg);">
                         <div class="h-100 d-flex align-items-center justify-content-end">
                             <div class="cta--text">
                                 <h6>-60%</h6>
@@ -301,7 +301,7 @@
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>topshop</span>
-                                <a href="single-product-details.html">
+                                <a href="${pageContext.request.contextPath}/single-product-details.html">
                                     <h6>Knot Front Mini Dress</h6>
                                 </a>
                                 <p class="product-price">$80.00</p>
@@ -331,7 +331,7 @@
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>topshop</span>
-                                <a href="single-product-details.html">
+                                <a href="${pageContext.request.contextPath}/single-product-details.html">
                                     <h6>Poplin Displaced Wrap Dress</h6>
                                 </a>
                                 <p class="product-price">$80.00</p>
@@ -367,7 +367,7 @@
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>mango</span>
-                                <a href="single-product-details.html">
+                                <a href="${pageContext.request.contextPath}/single-product-details.html">
                                     <h6>PETITE Crepe Wrap Mini Dress</h6>
                                 </a>
                                 <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
@@ -403,7 +403,7 @@
                             <!-- Product Description -->
                             <div class="product-description">
                                 <span>mango</span>
-                                <a href="single-product-details.html">
+                                <a href="${pageContext.request.contextPath}/single-product-details.html">
                                     <h6>PETITE Belted Jumper Dress</h6>
                                 </a>
                                 <p class="product-price">$80.00</p>
@@ -462,14 +462,14 @@
                     <div class="single_widget_area d-flex mb-30">
                         <!-- Logo -->
                         <div class="footer-logo mr-50">
-                            <a href="#"><img src="${pageContext.request.contextPath}/resources/img/core-img/logo2.png" alt=""></a>
+                            <a href="#"><img src="${pageContext.request.contextPath}/resources/img/core-img/t-white-logo.png" alt=""></a>
                         </div>
                         <!-- Footer Menu -->
                         <div class="footer_menu">
                             <ul>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="${pageContext.request.contextPath}/shop.html">Shop</a></li>
+                                <li><a href="${pageContext.request.contextPath}/blog.html">Blog</a></li>
+                                <li><a href="${pageContext.request.contextPath}/contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -522,7 +522,7 @@
                 <div class="col-md-12 text-center">
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="javascript:void(0);">Trending Twig</a>
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
