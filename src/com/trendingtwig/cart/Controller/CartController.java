@@ -17,7 +17,7 @@ import com.trendingtwig.cart.service.CartService;
 import com.trendingtwig.model.Item;
 
 @Controller
-@RequestMapping(value="/cart")
+@RequestMapping(value = "/carts")
 public class CartController {
 
 	private final CartService cartService;
@@ -27,9 +27,9 @@ public class CartController {
 		super();
 		this.cartService = cartService;
 	}
-	
+
 	@GetMapping(value = "/{id}")
-	public Cart getcart(@PathVariable Long id) {
+	public Cart getCart(@PathVariable Long id) {
 		return cartService.getCart(id);
 	}
 
