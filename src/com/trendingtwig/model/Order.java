@@ -11,8 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "TWIG_ORDER")
+//@Entity
+//@Table(name = "TWIG_ORDER")
 public class Order {
 
 	@Id

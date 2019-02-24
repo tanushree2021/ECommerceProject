@@ -30,7 +30,7 @@ public class Item {
 	@Column(name = "price")
 	private BigDecimal price;
 
-	@Column(name = "imagePath")
+	@Column(name = "image_Path")
 	private String imagePath;
 
 	@Column(name = "quantity")
@@ -39,7 +39,7 @@ public class Item {
 	@Column(name = "category")
 	private String category;
 
-	@Column(name = "subCategory")
+	@Column(name = "sub_Category")
 	private String subCategory;
 
 }

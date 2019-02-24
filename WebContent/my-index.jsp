@@ -290,7 +290,7 @@
                         <div class="single-product-wrapper">
                             <!-- Product Image -->
                             <div class="product-img">
-                                <img src="${pageContext.request.contextPath}/resources/img/product-img/product-1.jpg" alt="">
+                                <img src="${pageContext.request.contextPath}/${item.imagePath}" alt="">
                                 <!-- Hover Thumb -->
                                 <img class="hover-img" src="${pageContext.request.contextPath}/resources/img/product-img/product-2.jpg" alt="">
                                 <!-- Favourite -->
@@ -302,7 +302,7 @@
                             <div class="product-description">
                                 <span>topshop</span>
                                 <a href="${pageContext.request.contextPath}/single-product-details.html">
-                                    <h6>Knot Front Mini Dress</h6>
+                                    <h6>${item.name}</h6>
                                 </a>
                                 <p class="product-price">$80.00</p>
 
