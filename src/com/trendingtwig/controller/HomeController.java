@@ -1,5 +1,7 @@
 package com.trendingtwig.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,8 +23,8 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showHomePage(Model model) {
-		Item item = itemSevice.getItem(1L);
-		model.addAttribute("item", item);
+		List<Item> items = itemSevice.getItems();
+		model.addAttribute("items", items);
 		return "my-index";
 	}
 }

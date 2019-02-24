@@ -1,7 +1,5 @@
 package com.trendingtwig.model;
 
-import java.math.BigDecimal;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,11 +8,21 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-//@Entity
-//@Table(name = "TWIG_ITEM_DETAIL")
+@NoArgsConstructor(force = true)
+@Entity
+@Table(name = "TWIG_ITEM_DETAIL")
 public class ItemDetail {
+
+	public ItemDetail(String brand, String size, String color, String material) {
+		super();
+		this.brand = brand;
+		this.size = size;
+		this.color = color;
+		this.material = material;
+	}
 
 	@Id
 	@Column(name = "id")
