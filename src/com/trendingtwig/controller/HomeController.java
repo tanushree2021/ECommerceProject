@@ -25,6 +25,6 @@ public class HomeController {
 	public String showHomePage(Model model) {
 		List<Item> items = itemSevice.getItems();
 		model.addAttribute("items", items);
-		return "my-index";
+		return "index";
 	}
 }
