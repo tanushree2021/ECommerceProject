@@ -37,7 +37,7 @@ public class ItemDaoImpl implements ItemDao {
 	@Override
 	@Transactional
 	public List<Item> getItems() {
-		return sessionFactory.openSession().createQuery("from Item").getResultList();
+		return sessionFactory.getCurrentSession().createQuery("from Item").getResultList();
 	}
 
 	@Override

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -24,38 +25,31 @@ public class CartController {
 
 	@Autowired
 	public CartController(CartService cartService) {
-		super();
 		this.cartService = cartService;
 	}
 
-	@GetMapping(value = "/cart")
-	public Cart getCart(Long id) {
+	@GetMapping(value = "/{id}")
+	public Cart getCart(@PathVariable Long id) {
 		return cartService.getCart(id);
 	}
 
-	@GetMapping(value = "/savedCart")
-	public void saveCart(Cart cart) {
+	@PostMapping(value = "/")
+	public void saveCart(@ModelAttribute("cart") Cart cart) {
 		cartService.saveCart(cart);
 	}
-	
-	@GetMapping(value = "/cart-items")
-	public List<Item> getItemsInCart() {
+
+	@GetMapping(value = "/all")
+	public List<Item> getCarts() {
 		return cartService.getItemsInCart();
 	}
 
-	@PostMapping(value = "/item-saved-in-cart")
-	public void saveItemInCart(@RequestBody Item item) {
+	@PostMapping(value = "/update")
+	public void saveItemInCart(@ModelAttribute("item") Item item) {
 		cartService.saveItemInCart(item);
 	}
 
-	@DeleteMapping("/cart-removed")
-	public void deleteItemInCart(Long id) {
+	@PostMapping("/{id}/delete")
+	public void deleteItemInCart(@PathVariable("id") Long id) {
 		cartService.deleteItemInCart(id);
 	}
-
-	@PutMapping("/")
-	public void updateItemInCart(Item item) {
-		cartService.updateItemInCart(item);
-	}
-
 }

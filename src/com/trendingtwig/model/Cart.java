@@ -9,8 +9,10 @@ import javax.persistence.Table;
 
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor(force = true)
 @Entity
 @Table(name = "TWIG_CART")
 public class Cart {
