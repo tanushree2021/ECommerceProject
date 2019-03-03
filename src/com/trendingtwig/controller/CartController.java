@@ -1,4 +1,4 @@
-package com.trendingtwig.cart.Controller;
+package com.trendingtwig.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.trendingtwig.cart.model.Cart;
-import com.trendingtwig.cart.service.CartService;
+import com.trendingtwig.model.Cart;
+import com.trendingtwig.service.CartService;
 import com.trendingtwig.model.Item;
 
 @Controller
@@ -28,23 +28,28 @@ public class CartController {
 		this.cartService = cartService;
 	}
 
-	@GetMapping(value = "/{id}")
-	public Cart getCart(@PathVariable Long id) {
+	@GetMapping(value = "/cart")
+	public Cart getCart(Long id) {
 		return cartService.getCart(id);
 	}
 
-	@GetMapping(value = "/")
+	@GetMapping(value = "/savedCart")
+	public void saveCart(Cart cart) {
+		cartService.saveCart(cart);
+	}
+	
+	@GetMapping(value = "/cart-items")
 	public List<Item> getItemsInCart() {
 		return cartService.getItemsInCart();
 	}
 
-	@PostMapping(value = "/")
+	@PostMapping(value = "/item-saved-in-cart")
 	public void saveItemInCart(@RequestBody Item item) {
 		cartService.saveItemInCart(item);
 	}
 
-	@DeleteMapping("/{id}")
-	public void deleteItemInCart(@PathVariable("id") Long id) {
+	@DeleteMapping("/cart-removed")
+	public void deleteItemInCart(Long id) {
 		cartService.deleteItemInCart(id);
 	}
 

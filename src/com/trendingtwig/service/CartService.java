@@ -1,13 +1,15 @@
-package com.trendingtwig.cart.service;
+package com.trendingtwig.service;
 
 import java.util.List;
 
-import com.trendingtwig.cart.model.Cart;
+import com.trendingtwig.model.Cart;
 import com.trendingtwig.model.Item;
 
 public interface CartService {
 
 	public Cart getCart(Long id);
+	
+	public void saveCart(Cart cart);
 
 	public List<Item> getItemsInCart();
 
