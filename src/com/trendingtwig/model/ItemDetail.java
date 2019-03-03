@@ -15,7 +15,8 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "TWIG_ITEM_DETAIL")
 public class ItemDetail {
-
+	
+	
 	public ItemDetail(String brand, String size, String color, String material) {
 		super();
 		this.brand = brand;
