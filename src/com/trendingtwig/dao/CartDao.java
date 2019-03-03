@@ -1,13 +1,15 @@
-package com.trendingtwig.cart.dao;
+package com.trendingtwig.dao;
 
 import java.util.List;
 
-import com.trendingtwig.cart.model.Cart;
+import com.trendingtwig.model.Cart;
 import com.trendingtwig.model.Item;
 
 public interface CartDao {
 
 	public Cart getCart(Long id);
+	
+	public void saveCart(Cart cart);
 
 	public List<Item> getItemsInCart();
 

@@ -38,6 +38,7 @@ public class Item {
 		this.subCategory = subCategory;
 		this.itemDetail = itemDetail;
 	}
+	
 
 	@Id
 	@Column(name = "id")

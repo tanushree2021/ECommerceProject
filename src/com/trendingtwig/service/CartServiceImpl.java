@@ -1,12 +1,12 @@
-package com.trendingtwig.cart.service;
+package com.trendingtwig.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.trendingtwig.cart.dao.CartDao;
-import com.trendingtwig.cart.model.Cart;
+import com.trendingtwig.dao.CartDao;
+import com.trendingtwig.model.Cart;
 import com.trendingtwig.model.Item;
 
 @Service
@@ -19,10 +19,17 @@ public class CartServiceImpl implements CartService {
 		this.cartDao = cartDao;
 	}
 
+	@Override
 	public Cart getCart(Long id) {
 		return cartDao.getCart(id);
 	}
 
+	@Override
+	public void saveCart(Cart cart) {
+	cartDao.saveCart(cart);
+		
+	}
+	
 	@Override
 	public List<Item> getItemsInCart() {
 		return cartDao.getItemsInCart();
@@ -44,5 +51,7 @@ public class CartServiceImpl implements CartService {
 		cartDao.updateItemInCart(item);
 
 	}
+
+	
 
 }

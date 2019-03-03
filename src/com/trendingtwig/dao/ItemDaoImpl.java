@@ -79,4 +79,4 @@ public class ItemDaoImpl implements ItemDao {
 		saveItem(new Item("Dress 5", "black Shirt", BigDecimal.TEN, "resources/img/product-img/product-5.jpg",
 				new Integer(100), "Test", "Test 2", itemDetail5));
 	}
-}
+	}
